@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RecordManagerActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/color_f8f8f8"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/ic_record_manager_details"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="（查询入口已开通）"
+        android:textColor="@color/color_b3b3b3"
+        android:textSize="17sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="22dp"
+        android:text="模糊查询："
+        android:textColor="@color/color_4d4d4d"
+        android:textSize="18sp"/>
+
+    <com.ruffian.library.widget.REditText
+        android:id="@+id/ret_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="21dp"
+        app:border_width_normal="1px"
+        app:border_color_normal="@color/color_b3b6be"
+        app:corner_radius="5dp"
+        android:textColor="@color/color_999999"
+        android:hint="请输入企业名称"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColorHint="@color/color_999999"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        app:background_normal="@color/color_f8f8f8"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="22dp"
+        android:text="注销日期："
+        android:textColor="@color/color_4d4d4d"
+        android:textSize="18sp"/>
+
+    <com.ruffian.library.widget.RRelativeLayout
+        android:id="@+id/rrl_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="4dp"
+        app:background_normal="@color/color_f8f8f8"
+        app:border_color_normal="@color/color_b3b6be"
+        app:border_width_normal="1px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择起始注销日期"
+            android:textColor="@color/color_999999"
+            android:layout_marginStart="14dp"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_date_gray"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"/>
+    </com.ruffian.library.widget.RRelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="22dp"
+        android:text="许可证号："
+        android:textColor="@color/color_4d4d4d"
+        android:textSize="18sp"/>
+
+    <com.ruffian.library.widget.REditText
+        android:id="@+id/ret_license_key"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="21dp"
+        app:border_width_normal="1px"
+        app:border_color_normal="@color/color_b3b6be"
+        app:corner_radius="5dp"
+        android:hint="输入许可证号"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="@color/color_999999"
+        android:textColorHint="@color/color_999999"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        app:background_normal="@color/color_f8f8f8"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_query"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="查    询"
+        android:textSize="21sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:background="@drawable/ic_bg_green_dark"/>
+
+
+</LinearLayout>

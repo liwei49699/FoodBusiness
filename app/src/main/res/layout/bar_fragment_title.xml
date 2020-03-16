@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="visible"
+        android:text="标题"
+        android:textColor="@color/color_5d5d5d"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

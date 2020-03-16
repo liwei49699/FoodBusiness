@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="企业名称"
+            android:textColor="@color/color_4d4d4d"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="21dp"/>
+
+        <com.ruffian.library.widget.REditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="南京食品经营"
+            android:paddingEnd="10dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:layout_marginStart="21dp"
+            app:corner_radius="5dp"
+            android:textColor="@color/color_999999"
+            android:layout_marginEnd="17dp"
+            app:border_width_normal="1px"
+            app:background_normal="@color/color_f8f8f8"
+            app:border_color_normal="@color/color_b3b6be"
+            android:paddingStart="13dp"
+            android:textColorHint="@color/color_999999"/>
+    </LinearLayout>
+
+    <com.ruffian.library.widget.RRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            android:id="@+id/tv_date_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注销日期"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_4d4d4d"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="21dp"/>
+
+        <com.ruffian.library.widget.RTextView
+            android:id="@+id/rtv_date"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingEnd="10dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:layout_toEndOf="@+id/tv_date_sign"
+            android:text="201--12-12"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_999999"
+            android:layout_marginStart="21dp"
+            app:corner_radius="5dp"
+            android:layout_marginEnd="17dp"
+            app:border_width_normal="1px"
+            app:background_normal="@color/color_f8f8f8"
+            app:border_color_normal="@color/color_b3b6be"
+            android:paddingStart="13dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/ic_date_gray"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </com.ruffian.library.widget.RRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="许可证号"
+            android:textColor="@color/color_4d4d4d"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="21dp"/>
+
+        <com.ruffian.library.widget.REditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="南京食品经营"
+            android:paddingEnd="10dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:textColor="@color/color_999999"
+            android:layout_marginStart="21dp"
+            app:corner_radius="5dp"
+            android:layout_marginEnd="17dp"
+            app:border_width_normal="1px"
+            app:background_normal="@color/color_f8f8f8"
+            app:border_color_normal="@color/color_b3b6be"
+            android:paddingStart="13dp"
+            android:textColorHint="@color/color_999999"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="11dp"
+        android:text="查    询"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:background="@drawable/ic_bg_green_dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@color/color_f8f8f8"
+        android:orientation="horizontal">
+
+        <com.ruffian.library.widget.RTextView
+            android:layout_width="82dp"
+            android:layout_height="26dp"
+            android:text="图文列表"
+            android:layout_marginStart="13dp"
+            android:textColor="@color/white"
+            app:background_normal="@color/color_green_light"
+            android:textSize="13sp"
+            android:layout_marginTop="13dp"
+            app:corner_radius_bottom_right="13dp"
+            app:corner_radius_top_right="13dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/color_green_light"
+            android:layout_weight="1"
+            android:layout_marginTop="26dp"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ic_list_more"/>
+
+    </LinearLayout>
+</LinearLayout>

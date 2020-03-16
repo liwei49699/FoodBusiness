@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NotificationDetailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="13dp"
+        tools:context=".activity.NotificationDetailsActivity">
+
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/color_b3b6be"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginTop="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="94dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_bg_time"
+                android:text="2016-08-08"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_sign"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_notification_normal"
+            android:layout_below="@+id/rl_time"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_sign"
+            android:layout_below="@+id/rl_time"
+            android:layout_marginTop="13dp"
+            android:text="通知公告标题文字"
+            android:layout_marginEnd="22dp"
+            android:textColor="@color/color_4d4d4d"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_time_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间：2016-08-08"
+            android:layout_toRightOf="@+id/iv_sign"
+            android:layout_below="@+id/tv_title"
+            android:textColor="@color/color_9f9f9f"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内容：
+出现大面积网状裂纹,或主梁出现较多横向裂缝（钢筋混凝土梁、板），或顺主筋方向出现纵向裂缝,或出现斜裂缝、水平裂缝、竖向裂缝等，缝宽未超限出现大面积网状裂纹,或主梁出现较多横向裂缝（钢筋混凝土梁、板），或顺主筋方向出现纵向裂缝,或出现斜裂缝、水平裂缝、竖向裂缝等，缝宽未超限出现大面积网状裂纹,或主梁出现较多横向裂缝（钢筋混凝土梁、板），或顺主筋方向出现纵向裂缝,或出现斜裂缝、水平裂缝、竖向裂缝等，缝宽未超限"
+            android:layout_below="@id/iv_sign"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginEnd="22dp"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FoodBusiness</string>
+    <string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+    <string name="error_gif">长宽不小于 %1$dpx，且大小不超过 %2$sM。</string>
+    <string name="permission_hint">该功能扫描需要该权限</string>
+
+</resources>

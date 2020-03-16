@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AudioRecordActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="开始录制"/>
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="暂停录制"/>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="结束录制"/>
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="打开音频"/>
+
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="状态：默认"/>
+
+    <Button
+        android:id="@+id/btn_size"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="大小：默认"/>
+
+    <com.chengzhen.foodbusiness.view.AudioView
+        android:id="@+id/audioView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/color_f8f8f8"/>
+
+    <ImageView
+        android:id="@+id/iv_animal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

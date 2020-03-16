@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.RecordManagerDetailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:background="@color/white"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="9dp">
+
+            <ImageView
+                android:id="@+id/iv_company_photo"
+                android:layout_width="96dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginStart="22dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_food_default"/>
+
+            <TextView
+                android:id="@+id/tv_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南京食品经营企业一"
+                android:layout_toEndOf="@+id/iv_company_photo"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南京市秦淮区健康路888号"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/iv_company_photo"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_top"
+            android:background="@color/white"
+            android:paddingStart="20dp"
+            android:paddingEnd="19dp"
+            android:paddingBottom="50dp"
+            android:paddingTop="14dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="企业名称："
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_4d4d4d"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="南京食品经营企业名称"
+                    android:textColor="@color/color_4d4d4d"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_b3b6be"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="社会信用代码："
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_4d4d4d"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="35485569MHY5568566"
+                    android:textColor="@color/color_4d4d4d"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_b3b6be"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备案号："
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_4d4d4d"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JY1234567890"
+                    android:textColor="@color/color_4d4d4d"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_b3b6be"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="法定代表人："
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_4d4d4d"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="@color/color_4d4d4d"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_b3b6be"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经营场所："
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_4d4d4d"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="中国江苏省南京市江宁区鼓楼街五号3-3301-2楼8-1042"
+                    android:textColor="@color/color_808080"
+                    android:textSize="13sp"
+                    android:gravity="end"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_b3b6be"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主体业态："
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_4d4d4d"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="食品销售经营者"
+                    android:textColor="@color/color_4d4d4d"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_b3b6be"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经营项目："
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_4d4d4d"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="特殊食品销售"
+                    android:textColor="@color/color_4d4d4d"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_b3b6be"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期："
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_4d4d4d"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2020年01月12日至2025年01月11日"
+                    android:textColor="@color/color_808080"
+                    android:textSize="13sp"
+                    android:gravity="end"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp">
+
+                <com.ruffian.library.widget.RRelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="10dp"
+                    app:border_color_normal="@color/color_green_tv"
+                    app:border_width_normal="1dp"
+                    app:corner_radius="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_record_sign"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:src="@drawable/ic_copy_record"
+                        android:layout_marginStart="28dp"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="备案记录"
+                        android:textSize="18sp"
+                        android:textColor="@color/color_green_tv"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="11dp"
+                        android:layout_toEndOf="@+id/iv_record_sign"/>
+
+                </com.ruffian.library.widget.RRelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_bg_green_gradient"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv__electronic_certificate"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:src="@drawable/ic_electronic_certificate_white"
+                        android:layout_marginStart="28dp"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电子证书"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_toEndOf="@+id/iv__electronic_certificate"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

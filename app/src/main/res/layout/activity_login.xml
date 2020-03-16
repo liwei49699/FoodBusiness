@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="414:342"
+            android:src="@drawable/ic_account_head"/>
+
+        <LinearLayout
+            android:id="@+id/ll_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/iv_head">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2px"
+                android:background="@color/color_b3b6be"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登 录"
+                android:textSize="21dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_999999"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2px"
+                android:layout_weight="1"
+                android:background="@color/color_b3b6be"/>
+        </LinearLayout>
+
+        <com.ruffian.library.widget.RRelativeLayout
+            android:id="@+id/rrl_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/ll_line"
+            app:border_width_normal="1px"
+            android:layout_marginTop="30dp"
+            app:corner_radius="5dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            app:border_color_normal="@color/color_b3b6be">
+
+            <ImageView
+                android:id="@+id/tv_sign_user"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_account_user"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"/>
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入用户名"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:textColorHint="@color/color_b3b3b3"
+                android:inputType="textPersonName"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_939393"
+                android:layout_toRightOf="@+id/tv_sign_user"
+                android:layout_marginRight="20dp"/>
+
+        </com.ruffian.library.widget.RRelativeLayout>
+
+        <com.ruffian.library.widget.RRelativeLayout
+            android:id="@+id/rrl_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/rrl_user"
+            app:border_width_normal="1px"
+            android:layout_marginTop="15dp"
+            app:corner_radius="5dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            app:border_color_normal="@color/color_b3b6be">
+
+            <ImageView
+                android:id="@+id/tv_sign_password"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_account_password"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:textColorHint="@color/color_b3b3b3"
+                android:inputType="textPassword"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_939393"
+                android:layout_toRightOf="@+id/tv_sign_password"
+                android:layout_marginRight="20dp"/>
+
+        </com.ruffian.library.widget.RRelativeLayout>
+
+        <CheckBox
+            android:id="@+id/cb_remember_password"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/rrl_password"
+            app:layout_constraintStart_toStartOf="parent"
+            android:button="@null"
+            android:background="@drawable/bg_checkbox"
+            android:layout_marginTop="17dp"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:checked="true"
+            android:textColor="@color/color_aaaaaa"
+            android:layout_marginStart="28dp"/>
+
+        <TextView
+            android:id="@+id/tv_remember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/cb_remember_password"
+            android:text="记住密码"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="17sp"
+            app:layout_constraintTop_toTopOf="@+id/cb_remember_password"
+            app:layout_constraintBottom_toBottomOf="@+id/cb_remember_password"/>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintTop_toBottomOf="@+id/cb_remember_password"
+            android:text="登  录"
+            android:textSize="21dp"
+            android:gravity="center"
+            android:background="@drawable/ic_bg_green_dark"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp" />
+
+        <TextView
+            android:id="@+id/tv_find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="找回密码？"
+            android:textSize="17dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/color_gray_lite"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:paddingBottom="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+
